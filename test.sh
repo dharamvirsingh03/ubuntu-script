@@ -47,7 +47,7 @@ echo -e "\e[38;5;198mPress \q to quit"
 sudo -u postgres psql
 
 # -------
-sudo apt-get install pgadmin3 -y
+sudo apt-get install pgadmin4 -y
 
 # -------
 
@@ -70,15 +70,7 @@ sudo snap install postman
 
 # -------
 
-sudo apt install software-properties-common apt-transport-https wget
-
-wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
-
-sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
-
-sudo apt update -y
-
-sudo apt install code -y
+sudo snap install code --classic
 
 # -------
 
@@ -89,11 +81,7 @@ sudo apt-get install -y npm
 sudo apt-get install -y yarn
 
 # -------
-
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-4.4.3-amd64.deb
-sudo apt install ./slack-desktop-*.deb
-sudo apt-get upgrade slack-desktop -y
-
+sudo snap install slack --classic
 # -------
 
 sudo apt install mysql-server -y
