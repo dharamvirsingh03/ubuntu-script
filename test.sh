@@ -4,8 +4,18 @@
 # add Postgres version if you don't want to install the latest one.
 # Zoom will be downloaded each time when you run this script on same script location.
 # Script is for Ubuntu 20.04 Focal Fossa.
-# Copyright 2020-21
+# Copyright 2021-22
 # -------
+# Steps to getting started with this script:
+# 1. Install github in newly installed Ubuntu by below commands
+# sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
+# sudo apt-add-repository https://cli.github.com/packages
+# sudo apt install gh
+# 2. login to github thru HTTPS by
+# gh auth login
+# and follow on screen instructions.
+# 3. download git repo by
+# gh repo clone dharamvirsingh03/ubuntu-script
 
 sudo apt-get install -y apache2
 sudo systemctl start apache2
