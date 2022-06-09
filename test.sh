@@ -54,10 +54,7 @@ sudo apt-get install pgadmin4 -y
 sudo apt-get install git-core git-gui git-doc -y
 
 # -------
-
-wget https://zoom.us/client/latest/zoom_amd64.deb
-
-sudo dpkg -i zoom_amd64.deb
+sudo snap install zoom-client
 # -------
 
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
